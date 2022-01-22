@@ -18,6 +18,9 @@ DEVICE_PATH := device/samsung/j6lte
 # Audio
 BOARD_USE_TFA_AMP := true
 
+# Display
+TARGET_SCREEN_DENSITY := 320
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j6lte,j6ltecis,j6ltexx,j6lteub,j6lteins,j6ltedtvvj,j6ltekx,j6ltedx
 
