@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal \
     libwpa_client \
-		WifiOverlay \
+    WifiOverlay \
     wificond \
     wifiloader \
     wifilogd \
