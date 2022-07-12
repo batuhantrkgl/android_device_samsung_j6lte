@@ -35,5 +35,3 @@ on boot
 
 on property:vold.decrypt=trigger_restart_framework
 exec /vendor/bin/hw/macloader
-
-

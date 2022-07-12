@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The havocOS Project
+# Copyright (C) 2019 The arrowOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,17 +22,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from j6lte device
 $(call inherit-product, device/samsung/j6lte/device.mk)
 
-# Inherit some common havoc stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Device identifier. This must come after all inclusions
+
 PRODUCT_DEVICE := j6lte
-PRODUCT_NAME := havoc_j6lte
+PRODUCT_NAME := arrow_j6lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := Galaxy J6
 PRODUCT_MANUFACTURER := samsung
 
-WITH_GAPPS := true
 TARGET_SUPPORTS_BLUR := false
 TARGET_FACE_UNLOCK_SUPPORTED := false
 

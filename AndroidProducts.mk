@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The havocOS Project
+# Copyright (C) 2019 The arrowOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_j6lte.mk
+    $(LOCAL_DIR)/arrow_j6lte.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_j6lte-user \
-    havoc_j6lte-userdebug \
-    havoc_j6lte-eng
+    arrow_j6lte-user \
+    arrow_j6lte-userdebug \
+    arrow_j6lte-eng
