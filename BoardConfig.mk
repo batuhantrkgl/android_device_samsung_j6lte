@@ -104,4 +104,5 @@ TW_INCLUDE_FUSE_NTFS := true
 TARGET_COPY_OUT_VENDOR := vendor
 # PBRP Flags 
 PB_TORCH_PATH := /sys/class/leds/flashlight 
+#file system 
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 39845888
