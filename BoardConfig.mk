@@ -50,15 +50,11 @@ TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE := true
 
 # Kernel
-
-
  TARGET_KERNEL_ARCH := arm64 
-
  TARGET_KERNEL_HEADER_ARCH := arm64 
-
  TARGET_PREBUILT_DTIMAGE := $(KERNEL_PATH)/dt.img 
-
  TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/kernel
+
 # Extracted with libbootimg
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt $(OUT_DIR)/target/product/j6lte/obj/KERNEL_OBJ/arch/$(TARGET_ARCH)/boot/dtb.img
 BOARD_KERNEL_BASE := 0x10000000
@@ -66,18 +62,11 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_IMAGE_NAME := Image dtb.img
 
 # File systems
-# File systems 
-
  BOARD_HAS_LARGE_FILESYSTEM := true 
-
  BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4 
-
  BOARD_RECOVERYIMAGE_PARTITION_SIZE := 39845888 
-
  TARGET_USERIMAGES_USE_EXT4 := true 
-
  TARGET_USERIMAGES_USE_F2FS := true 
-
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
 
 # Recovery
@@ -114,22 +103,17 @@ TW_INCLUDE_FUSE_NTFS := true
 
 # Vendor separation
 TARGET_COPY_OUT_VENDOR := vendor
-## Download Mode 
-
+#Download Mode 
  TW_NO_REBOOT_BOOTLOADER := true 
-
  TW_HAS_DOWNLOAD_MODE := true 
 
   
 
- # Platform Info 
-
+ # Platform Info
  PLATFORM_VERSION := 16.1.0 
-
  PLATFORM_SECURITY_PATCH := 2099-12-31 
 
   
 
  # PBRP Flags 
-
  PB_TORCH_PATH := "/sys/devices/virtual/camera/flash/rear_flash"
