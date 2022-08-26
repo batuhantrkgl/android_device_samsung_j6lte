@@ -17,18 +17,17 @@
 PRODUCT_RELEASE_NAME := j6lte
 
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, build/target/product/embedded.mk) 
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/pb/config/common.mk)
 
-PRODUCT_PACKAGES += \
-	charger_res_images \
-	charger
+
+ # Inherit from our custom product configuration 
+
+ $(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_DEVICE := j6lte
 PRODUCT_NAME := omni_j6lte
 PRODUCT_MODEL := Samsung Galaxy J6 2018
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
+o
