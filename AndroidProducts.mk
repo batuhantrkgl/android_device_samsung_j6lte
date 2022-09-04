@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow._j6lte.mk
+    $(LOCAL_DIR)/arrow_j6lte.mk
 
 COMMON_LUNCH_CHOICES := \
     arrow_j6lte-user \
