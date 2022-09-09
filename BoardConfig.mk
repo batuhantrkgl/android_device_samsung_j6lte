@@ -57,7 +57,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
 # Extracted with libbootimg
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/dtbhtool/mkbootimg.mk
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100  --dt device/samsung/on7xelte/prebuilt/dt.img
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_IMAGE_NAME := Image
