@@ -53,6 +53,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := exynos7870-j6lte_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
+TARGET_PREBUILT_DTB := device/samsung/on7xelte/prebuilt/dt.img
 
 # Extracted with libbootimg
 BOARD_CUSTOM_BOOTIMG := true
