@@ -105,4 +105,16 @@ BOARD_AVB_ENABLE := false
 BOARD_BUILD_DISABLED_VBMETAIMAGE := true
 
 # Include
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/dtbhtool/include
+#TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/dtbhtool/include
+
+#SHRP Flags
+SHRP_DEVICE_CODE := on7xelte
+SHRP_MAINTAINER := Batuhantrkgl
+SHRP_DARK := true
+SHRP_PATH := device/samsung/$(SHRP_DEVICE_CODE)
+SHRP_REC := /dev/block/bootdevice/by-name/RECOVERY
+SHRP_DEVICE_TYPE := A/B
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /sdcard1
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
