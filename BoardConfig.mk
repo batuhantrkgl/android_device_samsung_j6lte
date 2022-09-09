@@ -48,22 +48,17 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE := true
 
-# Kernel
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_CONFIG := exynos7870-j6lte_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
-TARGET_PREBUILT_DTB := device/samsung/on7xelte/prebuilt/dt.img
 
-# Extracted with libbootimg
+#kernel and bootimg
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/dtbhtool/mkbootimg.mk
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100  --dt device/samsung/on7xelte/prebuilt/dt.img
+TARGET_PREBUILT_KERNEL := device/samsung/on7xelte/prebuilt/Image
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_KERNEL_SEPARATED_DT := true
-TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/dtbhtool/mkbootimg.mk
+TARGET_PREBUILT_DTB := device/samsung/on7xelte/prebuilt/dt.img
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
