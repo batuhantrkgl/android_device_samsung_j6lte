@@ -1,4 +1,4 @@
-# 
+ # 
  #        This file is part of the OrangeFox Recovery Project 
  #         Copyright (C) 2019-2021 The OrangeFox Recovery Project 
  # 
@@ -17,5 +17,9 @@
  # 
  #         Please maintain this if you use this script or any part of it 
  # 
-         export ALLOW_MISSING_DEPENDENCIES=true 
-         export LC_ALL="C"
+
+
+
+ # Temp.
+ #         export ALLOW_MISSING_DEPENDENCIES=true 
+ #         export LC_ALL="C"
